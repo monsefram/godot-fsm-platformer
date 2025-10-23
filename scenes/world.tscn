@@ -22,3 +22,20 @@ offset_bottom = 23.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(246, 14)
 shape = SubResource("RectangleShape2D_f3sb7")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="LayerSky" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.2, 0.2)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/LayerSky"]
+
+[node name="LayerHills" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.5, 0.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/LayerHills"]
+
+[node name="LayerNear" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.8, 0.8)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/LayerNear"]
