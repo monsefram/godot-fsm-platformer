@@ -13,19 +13,16 @@ size = Vector2(600, 18)
 scroll_scale = Vector2(-0.1, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="backgound"]
+position = Vector2(276, -120)
+scale = Vector2(1.39551, 0.969727)
 texture = ExtResource("2_4wyf3")
-
-[node name="foreground" type="Parallax2D" parent="."]
-scroll_scale = Vector2(0, 0)
-repeat_size = Vector2(336, 192)
-
-[node name="Sprite2D" type="Sprite2D" parent="foreground"]
 
 [node name="midground" type="Parallax2D" parent="."]
 scroll_scale = Vector2(0.4, 0.4)
 autoscroll = Vector2(10, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="midground"]
+position = Vector2(180, -106)
 texture = ExtResource("3_4wyf3")
 
 [node name="Player" parent="." instance=ExtResource("1_nnsk1")]
